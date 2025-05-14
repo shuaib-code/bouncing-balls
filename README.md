@@ -1,4 +1,4 @@
-[![Vue Unpkg](https://raw.githubusercontent.com/shuaib-code/vue-unpkg/refs/heads/main/public/social.png)](https://vuejs.org/)\
+[![Vue Unpkg](https://raw.githubusercontent.com/shuaib-code/vue-unpkg/refs/heads/main/public/social.png)](https://vuejs.org/)
 
 # 🎾 Bouncing Balls – JavaScript OOP Demo
 

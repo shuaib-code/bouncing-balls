@@ -12,6 +12,15 @@ function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// function to random velocity
+
+function randomVel(min, max) {
+  const velocity = random(min, max);
+
+  // this ensure ball velocity in not 0
+  return velocity ? velocity : velocity + 1;
+}
+
 // function to generate random color
 
 function randomRGB() {
@@ -75,18 +84,18 @@ class Ball {
 
 // Creating a lot of ball
 const balls = [];
-const totalBall = 200;
+const totalBall = 1000;
 const velocity = 5;
 
 while (balls.length < totalBall) {
-  const size = random(1, 7);
+  const size = random(6, 8);
   const ball = new Ball(
     // ball position always drawn at least one ball width
     // away from the edge of the canvas, to avoid drawing errors
     random(0 + size, width - size),
     random(0 + size, height - size),
-    random(-velocity, velocity),
-    random(-velocity, velocity),
+    randomVel(-velocity, velocity),
+    randomVel(-velocity, velocity),
     randomRGB(),
     size
   );
